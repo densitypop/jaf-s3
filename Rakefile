@@ -58,10 +58,10 @@ end
 
 namespace :dist do  
   spec = Gem::Specification.new do |s|
-    s.name              = 'aws-s3'
+    s.name              = 'jaf-s3'
     s.version           = Gem::Version.new(AWS::S3::Version)
-    s.summary           = "Client library for Amazon's Simple Storage Service's REST API"
-    s.description       = s.summary
+    s.summary           = "Unsupported forked version of client library for Amazon's Simple Storage Service's REST API"
+    s.description       = "Like the main version of this gem, this version is 100% unsupported. Use at your own risk. It is forked to remove the alias_method_chain on const_missing to autocreate S3::Bucket objects for any class that ends in Bucket."
     s.email             = 'marcel@vernix.org'
     s.author            = 'Marcel Molina Jr.'
     s.has_rdoc          = true
